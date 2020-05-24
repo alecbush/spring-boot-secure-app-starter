@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+  <div class="app-container">
+    <h1>Welcome, [[${#httpServletRequest.remoteUser}]]! 😄</h1>
+    <p>This is a secure page only visible to authenticated users.</p>
+    <form th:action="@{/logout}" method="post">
+      <button class="form-control">Log Out</button>
+    </form>
+  </div>
+</body>
+
+</html>

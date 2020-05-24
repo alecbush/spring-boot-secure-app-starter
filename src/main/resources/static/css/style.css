@@ -1,0 +1,68 @@
+/* GLOBAL ***********************/
+
+* {
+  box-sizing: border-box;
+}
+
+/* APP CONTAINER ****************/
+
+div.app-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* FORM COMPONENTS **************/
+
+/* CURSOR */
+
+button.form-control {
+  cursor: pointer;
+}
+
+/* SPACING & SIZING */
+
+input.form-control, button.form-control, div.alert {
+  font-size: 12pt;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+}
+
+/* BORDER */
+
+input.form-control, button.form-control, div.alert {
+  border-radius: 4px;
+}
+
+/* COLOR */
+
+input.form-control {
+  border: 1px solid #938d93;
+}
+
+button.form-control {
+  border: none;
+  background-color: #2763a0;
+  color: #ffffff;
+}
+
+div.error {
+  background-color: #ff221b;
+  color: #ffffff;
+}
+
+div.success {
+  background-color: #42cd3c;
+  color: #ffffff;
+}
+
+/* LINK *************************/
+
+div.link-container {
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
